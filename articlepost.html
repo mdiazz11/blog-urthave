@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <nav class="menu-navigation-basic">
+        <a href="/">Home</a>
+        <a href="/">Products</a>
+        <a href="/" id="company"><i class="fa fa-bandcamp" aria-hidden="true"></i> Company</a>
+        <a href="/">Contact</a>
+        <a href="/">About</a>
+    </nav>
+
+    <section>
+
+        <div class="main-content">
+
+            <div class="article-post">
+                <div class="article-post-img" style="background-image: url(https://unsplash.it/1000/1000?image=1062)">
+
+                </div>
+                <div class="article-post-content">
+                    <h2>Article Title Here</h2>
+                    <p class="time"><i class="fa fa-calendar" aria-hidden="true"></i> January 1, 2017</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe delectus magnam doloremque consequuntur. Et doloremque autem architecto distinctio, beatae temporibus at! Nam dignissimos fugiat minima quidem itaque molestias vitae at.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <aside class="sidebar-light">
+
+            <div class="company-info">
+
+                <h3>Company Inc</h3>
+
+                <p>We are the best company. Our high spirit and good work have won us numerous awards. Follow us to stay in touch!</p>
+
+                <div class="social-buttons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="latest-blog-posts">
+
+                <h3><i class="fa fa-rss"></i> Latest blog posts</h3>
+
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor sit amet. </a><span>2 days ago</span></li>
+                    <li><a href="#">Pellentesque quis eros dignis. </a><span>one week ago</span></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet. </a><span>2 weeks ago</span></li>
+                    <li><a href="#">Nam tempus turpis viverra, mattis diam ac, malesuada mi. </a><span>3 weeks ago</span></li>
+                </ul>
+
+            </div>
+
+        </aside>
+
+    </section>
+
+    <footer class="footer-basic-centered">
+
+        <p class="footer-company-motto">The company motto.</p>
+
+        <p class="footer-links">
+            <a href="/">Home</a>
+            <a href="/">Products</a>
+            <a href="/">Contact</a>
+            <a href="/">About</a>
+        </p>
+
+        <p class="footer-company-name">Company Name &copy; 2015</p>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <script>
+        $(function() {
+
+            var menu = $('.menu-navigation-basic');
+
+            menu.slicknav();
+
+            // Mark the clicked item as selected
+
+            menu.on('click', 'a', function() {
+                var a = $(this);
+
+                a.siblings().removeClass('selected');
+
+                //make sure not to underline company logo/name
+                if (a.attr("id") != "company")
+                    a.addClass('selected');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

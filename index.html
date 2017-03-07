@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <nav class="menu-navigation-basic">
+        <a href="/" class="selected">Home</a>
+        <a href="/">Products</a>
+        <a href="/" id="company"><i class="fa fa-bandcamp" aria-hidden="true"></i> Company</a>
+        <a href="/">Contact</a>
+        <a href="/">About</a>
+    </nav>
+
+    <ul class="article-list-basic">
+
+        <li>
+            <a href="articlepost.html" style="background-image: url(https://unsplash.it/1000/1000?image=1062)">
+            </a>
+            <div>
+                <h2><a href="articlepost.html">Interesting article title</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus mattis laoreet diam a, volutpat magna.</p>
+                <a href="articlepost.html" class="read-more">Read more &rarr;</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="articlepost.html" style="background-image: url(https://unsplash.it/1000/1000?image=1050)">
+            </a>
+            <div>
+                <h2><a href="articlepost.html">Interesting article title</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus mattis laoreet diam a, volutpat magna.</p>
+                <a href="articlepost.html" class="read-more">Read more &rarr;</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="articlepost.html" style="background-image: url(https://unsplash.it/1000/1000?image=1002)">
+            </a>
+            <div>
+                <h2><a href="articlepost.html">Interesting article title</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus mattis laoreet diam a, volutpat magna.</p>
+                <a href="articlepost.html" class="read-more">Read more &rarr;</a>
+            </div>
+        </li>
+
+    </ul>
+
+    <ul class="article-list-vertical">
+
+        <li>
+            <a href="articlepost.html" style="background-image: url(https://unsplash.it/1000/1000?image=899)"></a>
+            <div>
+                <h2><a href="articlepost.html">Interesting article title</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus mattis laoreet diam a volutpat magna.</p>
+                <a href="articlepost.html" class="read-more">Read more &rarr;</a>
+            </div>
+        </li>
+
+
+    </ul>
+
+    <ul class="article-list-basic">
+
+        <li>
+            <a href="articlepost.html" style="background-image: url(https://unsplash.it/1000/1000?image=999)">
+            </a>
+            <div>
+                <h2><a href="articlepost.html">Interesting article title</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus mattis laoreet diam a, volutpat magna.</p>
+                <a href="articlepost.html" class="read-more">Read more &rarr;</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="articlepost.html" style="background-image: url(https://unsplash.it/1000/1000?image=998)">
+            </a>
+            <div>
+                <h2><a href="articlepost.html">Interesting article title</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus mattis laoreet diam a, volutpat magna.</p>
+                <a href="articlepost.html" class="read-more">Read more &rarr;</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="articlepost.html" style="background-image: url(https://unsplash.it/1000/1000?image=918)">
+            </a>
+            <div>
+                <h2><a href="articlepost.html">Interesting article title</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus mattis laoreet diam a, volutpat magna.</p>
+                <a href="articlepost.html" class="read-more">Read more &rarr;</a>
+            </div>
+        </li>
+
+    </ul>
+    <ul class="article-list-vertical">
+
+        <li>
+            <a href="articlepost.html" style="background-image: url(https://unsplash.it/1000/1000?image=903)"></a>
+            <div>
+                <h2><a href="articlepost.html">Interesting article title</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus mattis laoreet diam a volutpat magna.</p>
+                <a href="articlepost.html" class="read-more">Read more &rarr;</a>
+            </div>
+        </li>
+
+
+    </ul>
+
+    <footer class="footer-basic-centered">
+
+        <p class="footer-company-motto">The company motto.</p>
+
+        <p class="footer-links">
+            <a href="/">Home</a>
+            <a href="/">Products</a>
+            <a href="/">Contact</a>
+            <a href="/">About</a>
+        </p>
+
+        <p class="footer-company-name"><i class="fa fa-bandcamp" aria-hidden="true"></i> COMPANY</p>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <script>
+        $(function() {
+
+            var menu = $('.menu-navigation-basic');
+
+            menu.slicknav();
+
+            // Mark the clicked item as selected
+
+            menu.on('click', 'a', function() {
+                var a = $(this);
+
+                a.siblings().removeClass('selected');
+
+                //make sure not to underline company logo/name
+                if (a.attr("id") != "company")
+                    a.addClass('selected');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
